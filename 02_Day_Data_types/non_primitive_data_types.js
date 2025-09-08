@@ -18,13 +18,13 @@ let userTwo = {
 }
 console.log(userOne == userTwo) // false
 
-let numbers = nums
-console.log(nums == numbers)  // true
+let numbers_2 = nums
+console.log(nums == numbers_2)  // true
 
-let userOne = {
+let userOne_2 = {
 name:'Asabeneh',
 role:'teaching',
 country:'Finland'
 }
-let userTwo = userOne
-console.log(userOne == userTwo)  // true
+let userTwo_2 = userOne_2
+console.log(userOne_2 == userTwo_2)  // true
