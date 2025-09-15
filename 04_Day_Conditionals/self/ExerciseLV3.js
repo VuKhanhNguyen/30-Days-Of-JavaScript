@@ -12,10 +12,19 @@ if(monthh === 'january' || monthh === 'march' || monthh === 'may' || monthh === 
 //2
 let numOfDay = prompt("Enter month number (1-12): ",0).toLowerCase()
 switch (numOfDay){
-    case 'january', 'march', 'may', 'july', 'august', 'october', 'december':
+    case 'january':
+    case 'march':
+    case 'may':
+    case 'july':
+    case 'august':
+    case 'october':
+    case 'december':
         console.log(`${numOfDay} has 31 days`)
         break
-    case 'april', 'june', 'september', 'november':
+    case 'april':
+    case 'june':
+    case 'september':
+    case 'november':
         console.log(`${numOfDay} has 30 days`)
         break
     case 'february':
