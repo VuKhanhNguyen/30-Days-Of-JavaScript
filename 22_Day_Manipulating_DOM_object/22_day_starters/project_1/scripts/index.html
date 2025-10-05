@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #number-container {
+            display: flex; /*flex cho phép các phần tử con nằm cạnh nhau */
+            flex-wrap: wrap; /* cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+            justify-content: center;
+            max-width: 1500px; /* 6 số * (200px width + 10px margin) vậy khoảng cách giữa các số là 10px, với 1500px thì 6 số đang chiếm 1200px suy ra sẽ còn trống 300px */
+            margin: 0 auto;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight: bold; font-size: 80px; text-align: center; margin-top: 20px; margin-bottom: 20px;">Number Generator</h1>
+    <h2 style="text-decoration: underline; font-size: 30px; text-align: center; margin-top: 20px; margin-bottom: 20px;">30DaysOfJavaScript:DOM Day 2</h2>
+    <h3 style="text-decoration: underline; font-size: 30px; text-align: center; margin-top: 20px; margin-bottom: 20px;">Author: Asabeneb Yetayeh</h3>
+    <div id="number-container" style="width: auto;"></div>
+
+    <script src="../scripts/script/main.js"></script>
+</body>
+</html>
