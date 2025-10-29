@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>World Countries Data</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-	<link rel="stylesheet" href="./css/style.css" />
+	<!-- <link rel="stylesheet" href="./css/style.css" /> -->
 </head>
 
 <body>
@@ -17,7 +17,6 @@
 		<p class="feedback"></p>
 	</header>
 	<main>
-
 		<div class="wrapper">
 			<div class="graph-buttons">
 				<button class="population">Population</button>
@@ -25,13 +24,20 @@
 			</div>
 			<h4 class="graph-title"></h4>
 			<div class="graphs">
-				<div class="graph-wrapper" id="stat"></div>
+				<div class="graph-wrapper" id="stat">
+					<canvas id="populationChart" width="2000" height="700" style="display:none"></canvas>
+					<canvas id="languagesChart" width="2000" height="700" style="display:none"></canvas>
+				</div>
 			</div>
 		</div>
 	</main>
 
-	<script src="./data/countries_data.js"></script>
-	<script src="./js/main.js"></script>
+	<script type="module" src="./data/countries_data.js"></script>
+	<script type="module" src="./scripts/main.js"></script>
+	<script type="module" src="./scripts/graph_btn.js"></script>
+	<script type="module" src="./scripts/graph_stats.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 </body>
 
